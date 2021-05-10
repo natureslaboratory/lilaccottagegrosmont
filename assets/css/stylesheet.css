@@ -48,14 +48,20 @@ table {
 }
 
 :root {
-  --primary: #5c8209;
-  --secondary: #a7cc23;
-  --bright: #a7cc23;
+  --primary: #BD56BF;
+  --secondary: #E2BDF2;
+  --bright: #93A603;
   --white: #fff;
   --radius: 4px;
-  --shadow: 0px 0px 10px #333;
+  --shadow: 0px 0px 10px rgba(51, 51, 51, 0.096);
   --text-shadow:;
 }
+
+.Lilac-flowers-1-hex { color: #BD56BF; }
+.Lilac-flowers-2-hex { color: #E2BDF2; }
+.Lilac-flowers-3-hex { color: #557314; }
+.Lilac-flowers-4-hex { color: #93A603; }
+.Lilac-flowers-5-hex { color: #F2F2F2; }
 
 *{
 	box-sizing: border-box;
@@ -69,7 +75,7 @@ body{
 
 header,footer{
 	width:100%;
-	float:left;
+	/* float:left; */
 }
 
 div.restrict{
@@ -227,7 +233,7 @@ a.button,input[type=submit],button.button{
 	box-shadow: var(--shadow);
 	text-shadow: var(--textshadow);
 	padding:1rem 2rem;
-	border:1px solid #b8e012;
+	border:1px solid var(--secondary);
 	border-radius: var(--radius);
 	text-align: center;
 	font-size:1rem;
@@ -249,14 +255,35 @@ header a.button{
 	min-height:500px;
 	overflow:hidden;
 	width:100%;
-	float:left;
+	min-height:500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* float:left; */
 }
+
+.hero .mask {
+	position:absolute;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width:100%;
+	background-image: linear-gradient(#0000002c , #0000000a);
+}
+
+
+.Lilac-flowers-1-hex { color: #BD56BF; }
+.Lilac-flowers-2-hex { color: #E2BDF2; }
+.Lilac-flowers-3-hex { color: #557314; }
+.Lilac-flowers-4-hex { color: #93A603; }
+.Lilac-flowers-5-hex { color: #F2F2F2; }
 
 .hero img{
 	position:absolute;
 	top:0px;
 	left:0px;
-	height:500px;
+	height: 100%;
 	width:100%;
 	object-fit:cover;
 	object-position:center center;
@@ -271,10 +298,10 @@ header a.button{
 .hero .restrict{
 	position:relative;
 	z-index:200;
-	background:url('../images/logo.svg') 1rem 0 no-repeat;
+	/* background:url('../images/logo.svg') 1rem 0 no-repeat; */
 	background-size:contain;
-	min-height:220px;
-	padding-left:260px;
+	/* min-height:220px; */
+	/* padding-left:260px; */
 }
 
 .hero.internal .restrict{
@@ -308,7 +335,7 @@ h1{
 	font-weight:400;
 	color:var(--white);
 	font-size:6rem;
-	margin-top:120px;
+	/* margin-top:120px; */
 	text-shadow: var(--text-shadow);
 }
 
@@ -499,7 +526,7 @@ dl dd{
 	overflow: ;
 	z-index:200;
 	width:100%;
-	float:left;
+	/* float:left; */
 }
 
 .text-columns .restrict{
@@ -513,6 +540,7 @@ dl dd{
 
 .text-columns .columns{
 	column-count:2;
+	column-gap: 2.5rem;
 }
 
 .text-columns .wave{
@@ -828,7 +856,8 @@ address label{
 @media screen and (max-width:1280px){
 	.hero .restrict{
 		background-size:contain;
-		padding-left:210px;
+		/* padding-left:210px; */
+		max-width: 800px;
 	}
 	.hero h2{
 		font-size:3.8rem;
@@ -873,7 +902,7 @@ address label{
 	}
 	.hero h2{
 		font-size:3.4rem;
-		margin-top:40px;
+		/* margin-top:40px; */
 	}
 	.hero h3{
 		font-size:1.8rem;
@@ -987,12 +1016,12 @@ address label{
 
 @media screen and (max-width:680px){
 	.hero h2{
-		margin-top:50px;
+		/* margin-top:50px; */
 		font-size:2.4rem;
-		display:none;
+		/* display:none; */
 	}
 	.hero .restrict{
-		margin-top:40px;
+		/* margin-top:40px; */
 		background-position: bottom center;
 		background-size:50px;
 	}
