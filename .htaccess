@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^blog/([a-zA-Z0-9-/]+)$ /blog/index.php?s=$1 [L]

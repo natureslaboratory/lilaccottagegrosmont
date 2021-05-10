@@ -1,0 +1,207 @@
+<perch:blocks>
+	<perch:block type="hero" label="Hero">
+		<div class="hero">
+			<img loading="lazy" src="<perch:content type="image" id="photo" label="Image" help="Upload or select an image" width="1600" height="900" crop="true">" alt="<perch:content type="text" id="alt" label="Description" required help="Description of this image" title>"
+    sizes="(min-width: 640px) 60vw, 100vw"
+    srcset="<perch:content type="image" id="photo" label="Image" width="200" height="100" crop="true"> 200w,
+            <perch:content type="image" id="photo" label="Image" width="400" height="200" crop="true"> 400w,
+            <perch:content type="image" id="photo" label="Image" width="800" height="360" crop="true"> 800w,
+            <perch:content type="image" id="photo" label="Image" width="1280" height="500" crop="true"> 1200w">
+			<div class="restrict">
+				<h2><strong>Experience</strong><br />North Yorkshire</h2>
+			</div>
+		</div>
+	</perch:block>
+	<perch:block type="herointernal" label="Hero Internal">
+		<div class="hero internal">
+			<img loading="lazy" src="<perch:content type="image" id="photo" label="Image" help="Upload or select an image" width="1600" height="900" crop="true">" alt="<perch:content type="text" id="alt" label="Description" required help="Description of this image" title>"
+    sizes="(min-width: 640px) 60vw, 100vw"
+    srcset="<perch:content type="image" id="photo" label="Image" width="200" height="100" crop="true"> 200w,
+            <perch:content type="image" id="photo" label="Image" width="400" height="200" crop="true"> 400w,
+            <perch:content type="image" id="photo" label="Image" width="800" height="360" crop="true"> 800w,
+            <perch:content type="image" id="photo" label="Image" width="1280" height="500" crop="true"> 1200w">
+			<div class="restrict">
+				<h1><perch:content type="text" id="heading" label="Heading" /></h1>
+			</div>
+		</div>
+	</perch:block>
+	<perch:block type="cards" label="Cards">
+		<div class="cards <perch:content type="select" options="background-primary,background-secondary,background-white" id="colour" label="Background Colour">">
+			<div class="restrict">
+				<perch:repeater id="cards" label="Cards">
+				<div class="card">
+					<perch:if exists="sticker"><p class="sticker"><perch:content type="text" id="sticker" label="Sticker" /></p></perch:if>
+					<perch:if exists="image"><img loading="lazy" src="<perch:content type="image" width="600" height="400" crop="true" label="Image" id="image" />" alt="<perch:content type="text" id="alt" label="Alt Text" />" /></perch:if>
+					<div>
+					<perch:content type="textarea" label="Text" editor="redactor" html id="text" />
+					<perch:if exists="button"><a href="<perch:content type="text" id="buttonurl" label="Button URL" />" class="button"><perch:content type="text" id="button" label="Button Text" /></a></perch:if>
+					</div>
+				</div>
+				</perch:repeater>
+			</div>
+		</div>
+	</perch:block>
+	<perch:block type="testimonial" label="Testimonial">
+		<div class="testimonial">
+			<img loading="lazy" src="<perch:content type="image" id="photo" label="Image" help="Upload or select an image" width="1600" height="900" crop="true">" alt="<perch:content type="text" id="alt" label="Description" required help="Description of this image" title>"
+    sizes="(min-width: 640px) 60vw, 100vw"
+    srcset="<perch:content type="image" id="photo" label="Image" width="200" height="100" crop="true"> 200w,
+            <perch:content type="image" id="photo" label="Image" width="400" height="200" crop="true"> 400w,
+            <perch:content type="image" id="photo" label="Image" width="800" height="360" crop="true"> 800w,
+            <perch:content type="image" id="photo" label="Image" width="1280" height="500" crop="true"> 1200w">
+			<div class="restrict">
+				<q><perch:content type="text" id="quote" label="Quote" /></q>
+				<cite><perch:content type="text" id="name" label="Name" /></cite>
+			</div>
+		</div>
+	</perch:block>
+	<perch:block type="textcolumns" label="Text Columns">
+		<div class="text-columns <perch:content type="select" options="background-primary,background-secondary,background-white" id="colour" label="Background Colour">">
+			<div class="restrict">
+				<div class="<perch:content type="select" id="columns" label="Columns" options="no-columns,columns" />">
+				<perch:content type="textarea" id="text" html editor="redactor" label="Text" />
+				</div>
+				<div>
+					<div class="<perch:content type="select" options="card,circle-image" id="style" label="Panel Style">">
+						<perch:if exists="sticker"><p class="sticker"><perch:content type="text" id="sticker" label="Sticker" /></p></perch:if>
+						<perch:if exists="image">
+							<perch:if id="style" value="card">
+								<img loading="lazy" src="<perch:content type="image" width="600" height="400" crop="true" label="Image" id="image" />" alt="<perch:content type="text" id="alt" label="Alt Text" />" />
+							<perch:else/>
+								<img loading="lazy" src="<perch:content type="image" width="600" height="600" crop="true" label="Image" id="image" />" alt="<perch:content type="text" id="alt" label="Alt Text" />" />
+							</perch:if>
+						</perch:if>
+						<div>
+						<perch:content type="textarea" label="Card Text" editor="redactor" html id="cardtext" />
+						<perch:if exists="button"><a href="<perch:content type="text" id="buttonurl" label="Button URL" />" class="button"><perch:content type="text" id="button" label="Button Text" /></a></perch:if>
+						</div>
+					</div>
+				</div>
+			</div>
+			<perch:if exists="wave">
+				<img loading="lazy" src="/assets/images/wave-2.png" alt="Wave" class="wave" />
+			</perch:if>
+		</div>
+		<perch:content type="checkbox" id="wave" label="Wave Background?" value="on" suppress="true" />
+	</perch:block>
+	<perch:block type="text" label="Text">
+		<div class="text background-wave">
+			<div class="restrict">
+				<perch:content type="textarea" id="text" label="Text" html editor="redactor" />
+			</div>
+		</div>
+		<perch:content type="checkbox" id="wave" label="Wave Background?" value="on" suppress="true" />
+	</perch:block>
+	<perch:block type="gallery" label="Gallery">
+		<div class="gallery">
+			<h2>Gallery</h2>
+			<p>Click on an image to see a larger version.</p>
+			<ul>
+			<perch:repeater id="images" label="Images">
+				<li><a href="<perch:content type="image" width="1280" label="Image" id="image" />" data-fancybox="gallery"><img loading="lazy" src="<perch:content type="image" height="200" width="200" crop="true" label="Image" id="image" />" alt="<perch:content type="text" id="alt" label="Alt Text" />" /></a></li>
+			</perch:repeater>
+			</ul>
+		</div>
+	</perch:block>
+	<perch:block type="split" label="Split">
+		<perch:content type="checkbox" id="form" value="on" label="Show Forms" suppress="true" />
+		<div class="split">
+			<div class="restrict">
+				<div>
+					<perch:if exists="image"><img loading="lazy" src="<perch:content type="image" width="800" label="Image" id="image" />" alt="<perch:content type="text" id="alt" label="Alt Text" />" /></perch:if>
+					<perch:content type="textarea" id="text" label="Text" html editor="redactor" />
+					<perch:if exists="form">
+						<h2>Book Hall Farm Bed and Breakfast Online</h2>
+						<div class="ftb-widget" data-id="27153" data-token="JhdeWVw5XoAPJlKjKehgEywziJfMSrXqjCMUniGkQtWVaso6tQ0FYenqIwxCT"></div><script src="https://widget.freetobook.com/widget.js"></script>
+					</perch:if>
+				</div>
+				<div>
+					<perch:if exists="imagetwo"><img loading="lazy" src="<perch:content type="image" width="800" label="Image #2" id="imagetwo" />" alt="<perch:content type="text" id="alttwo" label="Alt Text #2" />" /></perch:if>
+					<perch:content type="textarea" id="texttwo" label="Text #2" html editor="redactor" />
+					<perch:if exists="form">
+						<h2>Book &lsquo;The Dairy&rsquo; Self Catering Cottage</h2>
+						<div class="ftb-widget" data-id="42753" data-token="ep2JXeHhNbnE350Qa813dgMIBGMeVnwLdEOuzRgx95VgWCmDWMcXmCZL32ZfG"></div><script src="https://widget.freetobook.com/widget.js"></script>
+						<h3>Book via AirBnb</h3>
+						<p>Prefer to use AirBnb? <a href="https://www.airbnb.co.uk/rooms/27046518?source_impression_id=p3_1620215839_ESAX8Wq9gtZ80KnU">Click here</a>.</p>
+					</perch:if>
+				</div>
+			</div>
+		</div>
+	</perch:block>
+	<perch:block type="cta" label="CTA">
+		<div class="cta <perch:content type="select" options="none,extra-padding" id="padding" label="Extra Padding?"> <perch:content type="select" options="background-primary,background-secondary,background-bright" id="colour" label="Background Colour">">
+			<div class="restrict">
+				<h2><perch:content type="text" id="ctatext" label="Text" /></h2>
+				<perch:if exists="url">
+					<a class="button" href="<perch:content type="text" id="url" label="Button URL" />"><perch:content type="text" id="button" label="Button Text" /></a>
+				</perch:if>
+			</div>
+		</div>
+	</perch:block>
+	<perch:block type="contact" label="Contact">
+		<div class="split">
+			<div class="restrict">
+				<div>
+					<perch:content type="textarea" id="text" label="Text" html editor="redactor" />
+					<h2>Social Media</h2>
+					<ul>
+						<li><a href="https://www.facebook.com/HallFarmBedBreakfast?ref=ts&fre=ts" target="_blank"><i class="fa fa-facebook"></i> Follow Us on Facebook</a></li>
+						<li><a href="https://twitter.com/HallFarmYork" target="_blank"><i class="fa fa-twitter"></i> Follow Us on Twitter</a></li>
+						<li><a href="https://www.instagram.com/hallfarmhousebnb/" target="_blank"><i class="fa fa-instagram"></i> Follow Us on Instagram</a></li>
+					</ul>
+				</div>
+				<div>
+					<perch:form id="contact" method="post" app="perch_forms" class="contact">
+						<div class="form-section">
+							<div class="form-input">
+								<label for="name">Name</label>
+								<perch:input type="text" id="name" required label="Name" placeholder="Your Name" />
+							</div>
+							<div class="form-input">
+								<label for="email">Email</label>
+								<perch:input type="email" id="email" required label="Email" placeholder="you@company.com" />
+							</div>
+							<div class="form-input">
+								<label for="message">Message</label>
+								<perch:input type="textarea" id="message" required label="Message" placeholder="Message" />
+							</div>
+							<div class="form-input">
+								<perch:input type="submit" id="submit" value="Send" class="form-button" />
+							</div>
+						</div>
+						<perch:success>
+							<p class="success">
+								<perch:content id="success" type="text" label="Thank you message" />
+							</p>
+						</perch:success>
+					</perch:form>
+				</div>
+			</div>
+		</div>
+	</perch:block>
+	<perch:block type="subscribe" label="Subscribe">
+		<div class="subscribe background-bright">
+			<div class="restrict">
+				<div>
+					<h2>Get the Latest News</h2>
+					<p>Direct to your inbox.</p>
+				</div>
+				<div>
+					<form>
+						<label for="email">Email</label>
+						<input type="email" id="email" required label="Email" placeholder="you@company.com" />
+						<input type="submit" id="submit" value="Sign Up!" class="form-button" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</perch:block>
+	<perch:block type="instagram" label="Instagram">
+		<div class="instagram">
+			<div class="restrict">
+				<h2>Follow Us On Instagram</h2>
+				<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/5dc2b41fd4a955bd9d4d40bd430d0173.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+			</div>
+		</div>
+	</perch:block>
+</perch:blocks>
