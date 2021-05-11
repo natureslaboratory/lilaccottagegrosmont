@@ -91,8 +91,8 @@ div.restrict{
 
 .background-primary{
 	background-color:var(--primary);
-	background-color: white;
-	color: black;
+	/* background-color: white; */
+	/* color: black; */
 }
 
 .background-secondary{
@@ -264,6 +264,12 @@ a.button,input[type=submit],button.button{
 	color: white;
 	text-decoration: none;
 	background-color: var(--primary);
+	border: none;
+}
+
+input[type="submit"].background-secondary-light {
+	background-color: rgba(var(--secondary-rgb));
+	color: black;
 }
 
 a.button:hover,input[type=submit]:hover{
@@ -272,6 +278,20 @@ a.button:hover,input[type=submit]:hover{
 
 header a.button{
 	margin-top:1rem;
+}
+
+.social-list {
+	list-style-type: none;
+	margin: 0;
+}
+
+.social-list li a {
+	display: grid;
+	grid-template-columns: 20px 1fr;
+	gap: 0.2rem;
+	margin-top: 10px;
+	align-items: center;
+	text-decoration: none;
 }
 
 .hero{
@@ -589,7 +609,7 @@ dl dd{
 .cta{
 	padding:1rem 0;
 	width:100%;
-	float:left;
+	/* float:left; */
 }
 
 .cta.extra-padding{
@@ -611,6 +631,10 @@ dl dd{
 	line-height:3.4rem;
 }
 
+.cta.background-primary {
+	background-color: var(--primary);
+}
+
 .cta.background-primary h2{
 	color:#fff;
 }
@@ -618,6 +642,20 @@ dl dd{
 .cta a.button{
 	height:56px;
 	margin:0 auto;
+}
+
+.cta.background-primary a.button{
+	height:56px;
+	margin:0 auto;
+	background-color: var(--secondary);
+	color: black;
+}
+
+.cta.background-secondary a.button{
+	height:56px;
+	margin:0 auto;
+	background-color: var(--primary);
+	color: white;
 }
 
 .gallery{
@@ -660,6 +698,7 @@ dl dd{
 
 form{
 	background:#f1f2f2;
+	background: var(--primary);
 	padding:2rem;
 	margin-bottom:2rem;
 	width:100%;
@@ -678,13 +717,14 @@ a:hover{
 label{
 	font-weight:700;
 	color:var(--primary);
+	color: white;
 	margin-bottom:1rem;
 	width:100%;
 	float:left;
 }
 
 input[type=text],textarea,input[type=password],input[type=email],select{
-	background:var(--primary);
+	background:var(--secondary);
 	color:#fff;
 	width:100%;
 	float:left;
@@ -873,6 +913,28 @@ address label{
 
 .subscribe h2,.subscribe p{
 	color:#fff;
+}
+
+.subscribe input[type="submit"] {
+	border-radius: 0;
+}
+
+.subscribe.background-primary input[type="submit"] {
+	background-color: #eb8fec;
+	color: black;
+	border-radius: 0;
+}
+
+.subscribe:is(.background-secondary, .background-secondary-light, .background-white) :is(h2, p) {
+	color: black;
+}
+
+.subscribe:is(.background-secondary, .background-secondary-light) input[type="email"] {
+	background-color: white;
+}
+
+.subscribe.background-white input[type="email"] {
+	background-color: rgba(var(--secondary-rgb), 0.3);
 }
 
 #card-element{

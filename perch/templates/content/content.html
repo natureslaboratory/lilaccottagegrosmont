@@ -130,7 +130,7 @@
 		</div>
 	</perch:block>
 	<perch:block type="cta" label="CTA">
-		<div class="cta <perch:content type="select" options="none,extra-padding" id="padding" label="Extra Padding?"> <perch:content type="select" options="background-primary,background-secondary,background-bright" id="colour" label="Background Colour">">
+		<div class="cta <perch:content type="select" options="none,extra-padding" id="padding" label="Extra Padding?"> <perch:content type="select" options="background-primary,background-secondary,background-bright, background-secondary-light, background-white" id="colour" label="Background Colour">">
 			<div class="restrict">
 				<h2><perch:content type="text" id="ctatext" label="Text" /></h2>
 				<perch:if exists="url">
@@ -145,7 +145,7 @@
 				<div>
 					<perch:content type="textarea" id="text" label="Text" html editor="redactor" />
 					<h2>Social Media</h2>
-					<ul>
+					<ul class="social-list">
 						<li><a href="https://www.facebook.com/HallFarmBedBreakfast?ref=ts&fre=ts" target="_blank"><i class="fa fa-facebook"></i> Follow Us on Facebook</a></li>
 						<li><a href="https://twitter.com/HallFarmYork" target="_blank"><i class="fa fa-twitter"></i> Follow Us on Twitter</a></li>
 						<li><a href="https://www.instagram.com/hallfarmhousebnb/" target="_blank"><i class="fa fa-instagram"></i> Follow Us on Instagram</a></li>
@@ -167,7 +167,7 @@
 								<perch:input type="textarea" id="message" required label="Message" placeholder="Message" />
 							</div>
 							<div class="form-input">
-								<perch:input type="submit" id="submit" value="Send" class="form-button" />
+								<perch:input type="submit" id="submit" value="Send" class="form-button background-secondary-light" />
 							</div>
 						</div>
 						<perch:success>
@@ -181,7 +181,7 @@
 		</div>
 	</perch:block>
 	<perch:block type="subscribe" label="Subscribe">
-		<div class="subscribe background-bright">
+		<div class="subscribe <perch:content type="select" options="background-primary,background-secondary,background-bright, background-secondary-light, background-white" id="colour" label="Background Colour">">
 			<div class="restrict">
 				<div>
 					<h2>Get the Latest News</h2>
