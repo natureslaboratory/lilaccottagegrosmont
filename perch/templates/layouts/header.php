@@ -23,7 +23,7 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
 </head>
 <body>
-	<header class="background-primary">
+	<header class="background-secondary-light">
 		<div class="restrict">
 			<div>
 				<a class="button" href="/book-online/">Book Online</a>
