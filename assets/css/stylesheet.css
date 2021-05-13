@@ -49,22 +49,13 @@ table {
 
 :root {
   --primary: #502D55;
-  --primary-rgb: 189,86,191;
   --secondary: #8E4B71;
-  --secondary-rgb: 226,189,242; 
   --bright: #95AE8D;
-  --bright--rgb: 147,166,3; 
   --white: #E6E0DA;
   --radius: 4px;
   --shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
   /* --text-shadow:; */
 }
-
-.Lilac-flowers-1-hex { color: #BD56BF; }
-.Lilac-flowers-2-hex { color: #E2BDF2; }
-.Lilac-flowers-3-hex { color: #557314; }
-.Lilac-flowers-4-hex { color: #93A603; }
-.Lilac-flowers-5-hex { color: #F2F2F2; }
 
 *{
 	box-sizing: border-box;
@@ -117,7 +108,7 @@ div.restrict{
 }
 
 .background-secondary-light {
-	background-color: rgb(var(--secondary-rgb), 0.15);
+	background-color: var(--white);
 }
 
 em{
@@ -268,7 +259,7 @@ a.button,input[type=submit],button.button{
 }
 
 input[type="submit"].background-secondary-light {
-	background-color: rgba(var(--secondary-rgb));
+	background-color: var(--white);
 	color: black;
 }
 
@@ -934,7 +925,7 @@ address label{
 }
 
 .subscribe.background-white input[type="email"] {
-	background-color: rgba(var(--secondary-rgb), 0.3);
+	background-color: var(--white);
 }
 
 #card-element{
