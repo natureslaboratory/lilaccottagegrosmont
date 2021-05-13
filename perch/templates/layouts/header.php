@@ -33,8 +33,10 @@
 				<?php perch_pages_navigation(); ?>
 			</nav>
 			<div>
+<!--
 				<p>01347 878 386<br />
 				<a href="https://www.instagram.com/hallfarmhousebnb/" target="_blank"><i class="fa fa-instagram"></i><span class="icon">Follow us on Instagram</span></a> <a href="https://www.facebook.com/HallFarmBedBreakfast?ref=ts&fre=ts"><i class="fa fa-facebook-square"></i><span class="icon">Like us on Facebook</span></a> <a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fwww.hallfarmhouseyork.co.uk%2F&ref_src=twsrc%5Etfw&screen_name=HallFarmYork&tw_p=followbutton"><i class="fa fa-twitter"></i><span class="icon">Follow us on Twitter</span></a> <a href="http://www.tripadvisor.co.uk/Hotel_Review-g4560643-d4545806-Reviews-Hall_Farm_Bed_Breakfast-Sheriff_Hutton_North_Yorkshire_England.html"><i class="fa fa-tripadvisor"></i><span class="icon">Read reviews on Tripadvisor</span></a>
+-->
 			</div>
 		</div>
 	</header>
