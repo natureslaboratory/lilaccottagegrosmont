@@ -48,13 +48,13 @@ table {
 }
 
 :root {
-  --primary: #BD56BF;
+  --primary: #502D55;
   --primary-rgb: 189,86,191;
-  --secondary: #E2BDF2;
+  --secondary: #8E4B71;
   --secondary-rgb: 226,189,242; 
-  --bright: #93A603;
+  --bright: #95AE8D;
   --bright--rgb: 147,166,3; 
-  --white: #fff;
+  --white: #E6E0DA;
   --radius: 4px;
   --shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
   /* --text-shadow:; */
