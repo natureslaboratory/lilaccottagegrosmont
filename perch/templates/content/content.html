@@ -105,26 +105,15 @@
 		</div>
 	</perch:block>
 	<perch:block type="split" label="Split">
-		<perch:content type="checkbox" id="form" value="on" label="Show Forms" suppress="true" />
 		<div class="split">
 			<div class="restrict">
 				<div>
 					<perch:if exists="image"><img loading="lazy" src="<perch:content type="image" width="800" label="Image" id="image" />" alt="<perch:content type="text" id="alt" label="Alt Text" />" /></perch:if>
 					<perch:content type="textarea" id="text" label="Text" html editor="redactor" />
-					<perch:if exists="form">
-						<h2>Book Hall Farm Bed and Breakfast Online</h2>
-						<div class="ftb-widget" data-id="27153" data-token="JhdeWVw5XoAPJlKjKehgEywziJfMSrXqjCMUniGkQtWVaso6tQ0FYenqIwxCT"></div><script src="https://widget.freetobook.com/widget.js"></script>
-					</perch:if>
 				</div>
 				<div>
 					<perch:if exists="imagetwo"><img loading="lazy" src="<perch:content type="image" width="800" label="Image #2" id="imagetwo" />" alt="<perch:content type="text" id="alttwo" label="Alt Text #2" />" /></perch:if>
 					<perch:content type="textarea" id="texttwo" label="Text #2" html editor="redactor" />
-					<perch:if exists="form">
-						<h2>Book &lsquo;The Dairy&rsquo; Self Catering Cottage</h2>
-						<div class="ftb-widget" data-id="42753" data-token="ep2JXeHhNbnE350Qa813dgMIBGMeVnwLdEOuzRgx95VgWCmDWMcXmCZL32ZfG"></div><script src="https://widget.freetobook.com/widget.js"></script>
-						<h3>Book via AirBnb</h3>
-						<p>Prefer to use AirBnb? <a href="https://www.airbnb.co.uk/rooms/27046518?source_impression_id=p3_1620215839_ESAX8Wq9gtZ80KnU">Click here</a>.</p>
-					</perch:if>
 				</div>
 			</div>
 		</div>
@@ -144,12 +133,14 @@
 			<div class="restrict">
 				<div>
 					<perch:content type="textarea" id="text" label="Text" html editor="redactor" />
+<!--
 					<h2>Social Media</h2>
 					<ul class="social-list">
 						<li><a href="https://www.facebook.com/HallFarmBedBreakfast?ref=ts&fre=ts" target="_blank"><i class="fa fa-facebook"></i> Follow Us on Facebook</a></li>
 						<li><a href="https://twitter.com/HallFarmYork" target="_blank"><i class="fa fa-twitter"></i> Follow Us on Twitter</a></li>
 						<li><a href="https://www.instagram.com/hallfarmhousebnb/" target="_blank"><i class="fa fa-instagram"></i> Follow Us on Instagram</a></li>
 					</ul>
+-->
 				</div>
 				<div>
 					<perch:form id="contact" method="post" app="perch_forms" class="contact">
@@ -194,14 +185,6 @@
 						<input type="submit" id="submit" value="Sign Up!" class="form-button" />
 					</form>
 				</div>
-			</div>
-		</div>
-	</perch:block>
-	<perch:block type="instagram" label="Instagram">
-		<div class="instagram">
-			<div class="restrict">
-				<h2>Follow Us On Instagram</h2>
-				<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/5dc2b41fd4a955bd9d4d40bd430d0173.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 			</div>
 		</div>
 	</perch:block>
