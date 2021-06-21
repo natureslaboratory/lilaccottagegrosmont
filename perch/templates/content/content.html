@@ -99,7 +99,7 @@
 			<p>Click on an image to see a larger version.</p>
 			<ul>
 			<perch:repeater id="images" label="Images">
-				<li><a href="<perch:content type="image" width="1280" label="Image" id="image" />" data-fancybox="gallery"><img loading="lazy" src="<perch:content type="image" height="200" width="200" crop="true" label="Image" id="image" />" alt="<perch:content type="text" id="alt" label="Alt Text" />" /></a></li>
+				<li><a href="<perch:content type="image" width="1280" label="Image" id="image" />" data-fancybox="gallery" data-caption="<perch:content type="text" id="alt" label="Alt Text" />" data-title="<perch:content type="text" id="alt" label="Alt Text" />" title="<perch:content type="text" id="alt" label="Alt Text" />"><img loading="lazy" src="<perch:content type="image" height="200" width="200" crop="true" label="Image" id="image" />" alt="<perch:content type="text" id="alt" label="Alt Text" />" /></a></li>
 			</perch:repeater>
 			</ul>
 		</div>
