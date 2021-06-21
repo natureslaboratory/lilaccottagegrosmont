@@ -327,7 +327,7 @@ header a.button{
 
 .hero.internal{
 	min-height:0px;
-	padding:50px 0;
+	padding:50px 1rem;
 	margin-bottom:2rem;
 }
 
@@ -1063,6 +1063,10 @@ address label{
 		display:block;
 		width:100%;
 		padding:1rem;
+		margin-right:0px;
+	}
+	header nav ul li a{
+		color:#fff;
 	}
 	header nav ul li.selected{
 		border-top:none;
