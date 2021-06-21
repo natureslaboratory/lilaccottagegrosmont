@@ -1065,7 +1065,7 @@ address label{
 		padding:1rem;
 		margin-right:0px;
 	}
-	header nav ul li a{
+	header nav ul li a,header nav ul li.selected a{
 		color:#fff;
 	}
 	header nav ul li.selected{
@@ -1168,6 +1168,9 @@ address label{
 	header p br{
 		display:block;
 	}
+	.hero h1,.hero h2{
+		font-size:1.6rem;
+	}
 }
 
 @media screen and (max-width:440px){
@@ -1176,9 +1179,6 @@ address label{
 	}
 	header .restrict div:last-child{
 		display:none;
-	}
-	.hero h2{
-		font-size:2rem;
 	}
 	a.button,input[type=submit],button.button{
 		padding:0.6rem 1rem;
